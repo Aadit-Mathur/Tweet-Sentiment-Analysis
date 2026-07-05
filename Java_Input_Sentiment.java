@@ -8,7 +8,7 @@ public class Java_Input_Sentiment{
         String tweet = sc.nextLine();
         sc.close();
 
-        ProcessBuilder pb = new ProcessBuilder("python", "D:\\OneDrive\\Personal-Live\\OneDrive\\BITS-Course-Material\\Learning Path\\Python\\Tweet Sentiment Analysis\\Model_Call_for_Java.py", tweet);
+        ProcessBuilder pb = new ProcessBuilder("python", "Model_Call_for_Java.py", tweet);
         pb.redirectErrorStream(true);
         
         Process process = pb.start();
